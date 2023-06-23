@@ -55,6 +55,11 @@ body {
     font-size: 18px;
   }
 
+  img {
+    max-width: 550px;
+    background-color: transparent;
+  }
+
   .list {
     max-width: 250px;
     margin: 0 auto;
