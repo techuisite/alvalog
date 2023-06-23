@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Blog</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 id="blog-title"><button id="dark-mode-toggle">Alvalog.</h1></button>
+      <h2 id="blog-subtitle">Written by Paul Alvarez</h2>
+      <input type="checkbox" id="dark-mode-switch">
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="https://medium.com/@pauljalvarez" target="_blank">Medium</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="contentheader">
+    <main>
+      <article>
+        <h2>Alvalog Is My New Personal Blog</h2><p>
+        <h3>June 6th, 2023</h3></p>
+      </div>
+        </article>
+        <div class="content">
+        <p>
+          Today I am launching my new blog called.. <i>drumroll please</i> ..Alvalog. It is a mix of my last name Alvarez and blog. Not the most unique, but it is something I came up with on the fly
+          one day and I am happy with it. I think the name looks cool and it is personal enough for me as a website name. I have been wanting to create a more <i>personal</i> blog for awhile now. 
+        </p>
+        <p>
+          I already have a technology blog that lives on Medium, called <a href="https://medium.com/@pauljalvarez" target="_blank">Techuisite</a>, but I wanted place where I could also talk about tech and anything else 
+          that interests me. I plan on sharing some of my Techuisite posts here, but I am also going to treat this as a old school blog too where I will write short and sometimes long posts about anything I want. 
+        </p>
+      </article>
+    </div>
+    </main>
+    <footer>
+      <p>&copy; 2023 My Blog. All rights reserved.</p>
+    </footer>
+    <script>
+      // Get a reference to the dark mode switch element
+      var darkModeSwitch = document.getElementById('dark-mode-switch');
+
+      // Get a reference to the dark mode toggle button
+      var darkModeToggle = document.getElementById('dark-mode-toggle');
+
+      // Add a click event listener to the dark mode toggle button
+      darkModeToggle.addEventListener('click', function() {
+      // Toggle the checked state of the dark mode switch
+      darkModeSwitch.checked = !darkModeSwitch.checked;
+
+      // If the switch is checked (dark mode enabled)
+      if (darkModeSwitch.checked) {
+      document.body.classList.add('dark-mode'); // Apply dark mode styles
+      } else {
+      document.body.classList.remove('dark-mode'); // Remove dark mode styles
+      }
+      });
+    </script>
+  </div>
+</body>
+</html>
