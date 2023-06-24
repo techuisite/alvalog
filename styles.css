@@ -61,7 +61,7 @@ body {
   }
 
   .list {
-    max-width: 250px;
+    max-width: 300px;
     margin: 0 auto;
     padding: 0 40px;
     text-align: left;
@@ -69,6 +69,24 @@ body {
     font-size: 18px;
     color: inherit;
   }
+
+  .spacer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    line-height: 0;
+  }
+  
+  .spacer::before,
+  .spacer::after {
+    content: "\00B7 ";
+    font-size: 24px;
+  }
+  
+  .spacer::after {
+    content: "\00B7 \00B7";
+  }
+  
 
   h3 {
     font-style: italic;
@@ -125,6 +143,21 @@ body {
   article {
     margin-bottom: 20px;
   }
+
+  ul {
+    list-style-type: disc;
+    color: inherit;
+  }  
+
+  ul li a:hover {
+    color: gray;
+  }
+
+  ul li a {
+    text-decoration: none;
+    color: inherit;
+  }
+
   
   footer {
     text-align: center;
