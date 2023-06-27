@@ -32,7 +32,7 @@ body {
   
   .container {
     display: flex;
-    max-width: 750px;
+    max-width: 550px;
     margin: 0 auto;
     padding: 0 40px;
     justify-content: space-between;
@@ -104,6 +104,12 @@ body {
     display: block;
   }
 
+  .blog-title {
+    font-size: 28px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
   #blog-subtitle {
     font-size: 10px;
     color: #666;
@@ -164,11 +170,23 @@ body {
     padding: 20px 0;
   }
 
-  @media (max-width: 768px) {
-    /* Styles for screens up to 768px wide */
+  .blog-title {
+    font-size: 28px;
+    margin-top: 20px;
+    text-align: center;
   }
   
-  @media (max-width: 480px) {
-    /* Styles for screens up to 480px wide */
+  @media screen and (max-width: 768px) {
+    .container {
+      font-size: 20px;
+      margin-top: 40px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .container {
+      font-size: 24px;
+      margin-top: 60px;
+    }
   }
   
